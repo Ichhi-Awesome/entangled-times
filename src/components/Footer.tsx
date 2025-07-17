@@ -19,27 +19,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-primary">Quick Links</h3>
-            <div className="space-y-2">
-              <a href="/" className="block text-muted-foreground hover:text-primary transition-colors">
-                Home
-              </a>
-              <a href="/magazines" className="block text-muted-foreground hover:text-primary transition-colors">
-                Latest Issues
-              </a>
-              <a href="/about" className="block text-muted-foreground hover:text-primary transition-colors">
-                About Our Mission
-              </a>
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
-                Subscribe
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
             © 2024 Entangled Times. All rights reserved. Making physics accessible to everyone.
