@@ -5,10 +5,10 @@ import { Target, Heart, Lightbulb, Globe, Mail, Linkedin } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Editor-in-Chief",
-    specialty: "Quantum Physics",
-    initials: "SC",
+    name: "Ishaan Kapoor",
+    role: "Co-Editor",
+    specialty: "Physics",
+    initials: "IK",
     bio: "Leading quantum researcher with 15+ years in theoretical physics.",
     email: "sarah.chen@entangledtimes.com",
     linkedin: "https://linkedin.com/in/sarah-chen-physics"
