@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,14 +11,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-5 w-5" />
-                <span>entangledtimes@outlook.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Phone className="h-5 w-5" />
-                <span>+1 (555) 123-4567</span>
+                <span>contact@entangledtimes.com</span>
               </div>
             </div>
           </div>
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-primary">Quick Links</h3>
@@ -38,6 +35,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
             © 2024 Entangled Times. All rights reserved. Making physics accessible to everyone.
