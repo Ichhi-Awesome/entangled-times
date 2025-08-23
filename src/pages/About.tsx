@@ -13,7 +13,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/ishaan-p-kapoor/"
   },
   {
-    name: "Prof. Michael Rodriguez",
+    name: "Risha Jain",
     role: "Head of Creativity & Co-Editor",
     initials: "RJ", 
     bio: "A curious physics student with a passion for all things Formula 1.",
