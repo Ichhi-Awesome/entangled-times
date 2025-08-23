@@ -25,11 +25,6 @@ const Home = () => {
               </Button>
             </Link>
             <Subscribe variant="outline" size="lg" />
-            <Link to="/about">
-              <Button variant="ghost" size="lg" className="hover:bg-primary/10">
-                Learn More
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
