@@ -6,21 +6,19 @@ import { Target, Heart, Lightbulb, Globe, Mail, Linkedin } from "lucide-react";
 const teamMembers = [
   {
     name: "Ishaan Kapoor",
-    role: "Co-Editor",
-    specialty: "Physics",
+    role: "Content Lead & Co-Editor",
     initials: "IK",
-    bio: "Leading quantum researcher with 15+ years in theoretical physics.",
-    email: "sarah.chen@entangledtimes.com",
-    linkedin: "https://linkedin.com/in/sarah-chen-physics"
+    bio: "Passionate physics learner exploring electricity, electromagnetism, and the quantum mechanics.",
+    email: "ishaan.p.kapoor@gmail.com",
+    linkedin: "https://www.linkedin.com/in/ishaan-p-kapoor/"
   },
   {
     name: "Prof. Michael Rodriguez",
-    role: "Science Director",
-    specialty: "Cosmology",
-    initials: "MR", 
-    bio: "Astrophysicist specializing in black holes and cosmic phenomena.",
-    email: "michael.rodriguez@entangledtimes.com",
-    linkedin: "https://linkedin.com/in/michael-rodriguez-cosmology"
+    role: "Head of Creativity & Co-Editor",
+    initials: "RJ", 
+    bio: "A curious physics student with a passion for all things Formula 1.",
+    email: "risha.s.jain@gmail.com",
+    linkedin: "https://www.linkedin.com/in/risha-jain-0232b621b/"
   }
 ];
 
