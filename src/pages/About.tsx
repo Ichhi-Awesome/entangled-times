@@ -8,7 +8,7 @@ const teamMembers = [
     name: "Ishaan Kapoor",
     role: "Content Lead & Co-Editor",
     initials: "IK",
-    bio: "Passionate physics learner exploring electricity, electromagnetism, and the quantum mechanics.",
+    bio: "Passionate physics learner exploring electricity, electromagnetism, and quantum mechanics.",
     email: "ishaan.p.kapoor@gmail.com",
     linkedin: "https://www.linkedin.com/in/ishaan-p-kapoor/"
   },
