@@ -13,19 +13,19 @@ interface Video {
 // Simulated backend data - replace with actual API call when backend is ready
 const backendVideos: Video[] = [
   {
-    id: "dQw4w9WgXcQ",
-    title: "Double-Slit Experiment Demonstration",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    description: "A classic demonstration of wave-particle duality in quantum physics",
-    category: "Quantum Physics"
+    id: "toPWqrq-1SM",
+  title: "Static Electricity Experiment with Balloon",
+  url: "https://www.youtube.com/watch?v=toPWqrq-1SM",
+  description: "A simple demonstration of static electricity using a balloon and paper, showing how objects attract when charged.",
+  category: "Static Electricity"
   },
   {
-    id: "9bZkp7q19f0", 
-    title: "Pendulum Wave Machine",
-    url: "https://www.youtube.com/watch?v=9bZkp7q19f0",
-    description: "Beautiful wave patterns created by synchronized pendulums",
-    category: "Classical Physics"
-  },
+  id: "wkEqgp-ADkw",
+  title: "Jumping Paper Experiment",
+  url: "https://www.youtube.com/watch?v=wkEqgp-ADkw",
+  description: "Demonstrates how small pieces of paper jump toward a charged balloon due to static electricity.",
+  category: "Static Electricity"
+},
   {
     id: "hFAOXdXZ5TM",
     title: "Magnetic Field Visualization",
@@ -34,12 +34,41 @@ const backendVideos: Video[] = [
     category: "Electromagnetism"
   },
   {
-    id: "6vxHkAQRQUQ",
-    title: "Gyroscope Physics Demo",
-    url: "https://www.youtube.com/watch?v=6vxHkAQRQUQ",
-    description: "Exploring angular momentum and gyroscopic effects",
-    category: "Mechanics"
-  }
+  id: "8R6O0ncMn-o",
+  title: "How to Make a Magnet Maze",
+  url: "https://www.youtube.com/watch?v=8R6O0ncMn-o",
+  description: "A creative DIY project showing how to move a paperclip (or similar object) through a maze using only a magnet.",
+  category: "Magnetic Maze"
+},
+{
+  id: "IJgzVaTPEow",
+  title: "Plotting Magnetic Field Lines",
+  url: "https://www.youtube.com/watch?v=IJgzVaTPEow",
+  description: "A clear demonstration of magnetic field visualization using iron filings on top of a magnet.",
+  category: "Magnetic Field Visualization"
+},
+{
+  id: "dIdE-pqYqbs",
+  title: "5 Ways to Make a Rainbow",
+  url: "https://www.youtube.com/watch?v=dIdE-pqYqbs",
+  description: "Shows how to create rainbows at home using simple materials like water and light sources.",
+  category: "Make a Rainbow"
+},
+{
+  id: "4Onqeeanq_E",
+  title: "Light Experiment with Mirror",
+  url: "https://www.youtube.com/watch?v=4Onqeeanq_E",
+  description: "Shows how light reflects off a mirror when a flashlight is shined at it.",
+  category: "Mirror Magic"
+},
+{
+  id: "e5luNTl-yls",
+  title: "Playful Pendulum at Home STEM Experiment",
+  url: "https://www.youtube.com/watch?v=e5luNTl-yls",
+  description: "Shows how to build a simple pendulum and observe its back-and-forth motion.",
+  category: "Pendulum Swing"
+},
+
 ];
 
 const Experiments = () => {
