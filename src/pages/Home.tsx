@@ -1,16 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, BookOpen, Users, Zap } from "lucide-react";
+import { ArrowRight, BookOpen, Users, Zap, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Subscribe } from "@/components/Subscribe";
+import { useState, useEffect } from "react";
+
+const scientistQuotes = [
+  { quote: "The opposite of a correct statement is a false statement. But the opposite of a profound truth may well be another profound truth.", author: "Niels Bohr" },
+  { quote: "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world.", author: "Albert Einstein" },
+  { quote: "The worthwhile problems are the ones you can really solve or help solve, the ones you can really contribute something to.", author: "Richard Feynman" },
+  { quote: "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.", author: "Richard Feynman" },
+  { quote: "The important thing is not to stop questioning. Curiosity has its own reason for existing.", author: "Albert Einstein" },
+  { quote: "An expert is a person who has made all the mistakes that can be made in a very narrow field.", author: "Niels Bohr" },
+];
 
 const Home = () => {
+  const [currentQuote, setCurrentQuote] = useState(scientistQuotes[0]);
+
+  useEffect(() => {
+    const randomQuote = scientistQuotes[Math.floor(Math.random() * scientistQuotes.length)];
+    setCurrentQuote(randomQuote);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-6 bg-gradient-hero">
         <div className="container mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-fade-in leading-tight">
             Entangled Times
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
@@ -75,6 +92,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Scientist Quote Section */}
+      <section className="py-20 px-6 bg-gradient-subtle">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="relative">
+              <Quote className="h-16 w-16 text-primary/20 mx-auto mb-8" />
+              <blockquote className="text-2xl md:text-3xl font-medium text-foreground mb-8 leading-relaxed">
+                "{currentQuote.quote}"
+              </blockquote>
+              <cite className="text-lg text-primary font-semibold">
+                — {currentQuote.author}
+              </cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 px-6 bg-card">
         <div className="container mx-auto text-center">
@@ -85,7 +119,7 @@ const Home = () => {
             Join young scientists everywhere learning about the amazing world of science through our engaging issues!
           </p>
           <Link to="/magazines">
-            <Button size="lg" className="shadow-gold hover:shadow-elegant">
+            <Button size="lg" className="shadow-gold hover:shadow-elegant hover:bg-primary/90 transition-all duration-300">
               Start Reading Now
             </Button>
           </Link>
