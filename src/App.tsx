@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Magazines from "./pages/Magazines";
 import Experiments from "./pages/Experiments";
 import About from "./pages/About";
+import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/magazines" element={<Magazines />} />
             <Route path="/experiments" element={<Experiments />} />
             <Route path="/about" element={<About />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
