@@ -51,6 +51,15 @@ const Navigation = () => {
                 About Us
               </Button>
             </Link>
+            <Link to="/partners">
+              <Button 
+                variant={isActive("/partners") ? "default" : "ghost"}
+                size="sm"
+                className="transition-all duration-300 hover:shadow-gold text-xs sm:text-sm"
+              >
+                Our Partners
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
