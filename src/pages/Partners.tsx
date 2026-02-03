@@ -22,7 +22,7 @@ const Partners = () => {
             Our Partners
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We are proud to collaborate with these amazing organizations who share our vision for advancing physics education and research.
+            We are proud to collaborate with these amazing organizations who allow us to share our work with their students.
           </p>
         </div>
 
