@@ -1,5 +1,5 @@
-import partnerThinkSharp from "@/assets/partner-thinksharp.png";
-import partnerKshamata from "@/assets/partner-kshamata.png";
+import partnerThinkSharp from "@/assets/thinksharp.png";
+import partnerKshamata from "@/assets/kshamata.png";
 
 const partners = [
   {
