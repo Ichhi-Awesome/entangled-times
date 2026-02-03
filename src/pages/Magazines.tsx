@@ -13,7 +13,7 @@ const magazines = [
     title: "Electricity",
     issue: "Issue 1",
     date: "January 2025",
-    description: "Discover how electricity works! Learn about circuits, batteries, and lightning in fun and easy ways.",
+    description: "Discover how electricity works!",
     cover: cover1,
     featured: true
   },
