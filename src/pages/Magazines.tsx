@@ -10,7 +10,7 @@ import cover4 from "@/assets/magazine-cover-4.jpg";
 const magazines = [
   {
     id: 1,
-    title: "Amazing Electricity",
+    title: "Electricity",
     issue: "Issue 1",
     date: "January 2025",
     description: "Discover how electricity works! Learn about circuits, batteries, and lightning in fun and easy ways.",
@@ -19,7 +19,7 @@ const magazines = [
   },
   {
     id: 2,
-    title: "Magnificent Magnetism",
+    title: "Magnetism",
     issue: "Issue 2", 
     date: "February 2025",
     description: "Explore the magical world of magnets! Find out how magnetic fields work and why opposites attract.",
@@ -28,7 +28,7 @@ const magazines = [
   },
   {
     id: 3,
-    title: "Wonderful Light",
+    title: "Light",
     issue: "Issue 3",
     date: "March 2025", 
     description: "Uncover the secrets of light! Learn about colors, shadows, reflection, and how we see the world around us.",
@@ -40,7 +40,7 @@ const magazines = [
     title: "Motion & Mechanics",
     issue: "Issue 4",
     date: "April 2025",
-    description: "Get moving with forces and motion! Discover how things push, pull, and roll in our everyday world.",
+    description: "Discover how things push, pull, and roll in our everyday world.",
     cover: cover4,
     featured: false
   }
