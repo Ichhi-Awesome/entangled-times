@@ -6,7 +6,7 @@ import { Target, Heart, Lightbulb, Globe, Mail, Linkedin } from "lucide-react";
 const teamMembers = [
   {
     name: "Ishaan Kapoor",
-    role: "Content Lead & Co-Editor",
+    role: "Founder, Content Lead & Editor",
     initials: "IK",
     bio: "Passionate physics learner exploring electricity, electromagnetism, and quantum mechanics.",
     email: "ishaan.p.kapoor@gmail.com",
@@ -14,7 +14,7 @@ const teamMembers = [
   },
   {
     name: "Risha Jain",
-    role: "Head of Creativity & Co-Editor",
+    role: "Head of Creativity",
     initials: "RJ", 
     bio: "A curious physics student with a passion for all things Formula 1.",
     email: "risha.s.jain@gmail.com",
