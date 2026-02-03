@@ -12,7 +12,7 @@ const magazines = [
     id: 1,
     title: "Electricity",
     issue: "Issue 1",
-    date: "January 2025",
+    date: "March 2025",
     description: "Discover how electricity works!",
     cover: cover1,
     featured: true
@@ -21,7 +21,7 @@ const magazines = [
     id: 2,
     title: "Magnetism",
     issue: "Issue 2", 
-    date: "February 2025",
+    date: "April 2025",
     description: "Explore the magical world of magnets! Find out how magnetic fields work and why opposites attract.",
     cover: cover2,
     featured: false
@@ -30,7 +30,7 @@ const magazines = [
     id: 3,
     title: "Light",
     issue: "Issue 3",
-    date: "March 2025", 
+    date: "May 2025", 
     description: "Uncover the secrets of light! Learn about colors, shadows, reflection, and how we see the world around us.",
     cover: cover3,
     featured: false
@@ -39,7 +39,7 @@ const magazines = [
     id: 4,
     title: "Motion & Mechanics",
     issue: "Issue 4",
-    date: "April 2025",
+    date: "June 2025",
     description: "Discover how things push, pull, and roll in our everyday world.",
     cover: cover4,
     featured: false
