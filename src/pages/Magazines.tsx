@@ -8,7 +8,7 @@ import cover1 from "@/assets/magazine-cover-1.jpg";
 import cover2 from "@/assets/magazine-cover-2.jpg";
 import cover3 from "@/assets/magazine-cover-3.jpg";
 import cover4 from "@/assets/magazine-cover-4.jpg";
-import cover5 from "@/assets/magazine-cover-5.jpg";
+import cover5 from "@/assets/magazine-cover-5.jpeg";
 import cover6 from "@/assets/magazine-cover-6.jpg";
 import cover7 from "@/assets/magazine-cover-7.jpg";
 
