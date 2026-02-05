@@ -65,7 +65,7 @@ const magazines = [
   },
   {
     id: 6,
-    title: "Amazing Astrophysics",
+    title: "Astrophysics",
     issue: "Issue 6",
     date: "December 2025",
     description: "Journey through the cosmos! Discover stars, galaxies, black holes, and the mysteries of our vast universe.",
@@ -75,7 +75,7 @@ const magazines = [
   },
   {
     id: 7,
-    title: "Fantastic Fluids",
+    title: "Fluids",
     issue: "December 7",
     date: "Jan 2026",
     description: "Learn how liquids and gases flow, from ocean currents to airplane wings.",
