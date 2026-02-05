@@ -1,11 +1,16 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Eye } from "lucide-react";
+import { Calendar, Eye, X, Download } from "lucide-react";
 import { Subscribe } from "@/components/Subscribe";
+import { Button } from "@/components/ui/button";
 import cover1 from "@/assets/magazine-cover-1.jpg";
 import cover2 from "@/assets/magazine-cover-2.jpg";
 import cover3 from "@/assets/magazine-cover-3.jpg";
 import cover4 from "@/assets/magazine-cover-4.jpg";
+import cover5 from "@/assets/magazine-cover-5.jpg";
+import cover6 from "@/assets/magazine-cover-6.jpg";
+import cover7 from "@/assets/magazine-cover-7.jpg";
 
 const magazines = [
   {
@@ -15,7 +20,8 @@ const magazines = [
     date: "March 2025",
     description: "Discover how electricity works!",
     cover: cover1,
-    featured: true
+    featured: true,
+    pdfUrl: "/issue-1.pdf"
   },
   {
     id: 2,
@@ -24,41 +30,70 @@ const magazines = [
     date: "April 2025",
     description: "Explore the magical world of magnets! Find out how magnetic fields work and why opposites attract.",
     cover: cover2,
-    featured: false
+    featured: false,
+    pdfUrl: "/issue-2.pdf"
   },
   {
     id: 3,
     title: "Light",
     issue: "Issue 3",
-    date: "May 2025", 
+    date: "June 2025", 
     description: "Uncover the secrets of light! Learn about colors, shadows, reflection, and how we see the world around us.",
     cover: cover3,
-    featured: false
+    featured: false,
+    pdfUrl: "/issue-3.pdf"
   },
   {
     id: 4,
     title: "Motion & Mechanics",
     issue: "Issue 4",
-    date: "June 2025",
+    date: "August 2025",
     description: "Discover how things push, pull, and roll in our everyday world.",
     cover: cover4,
-    featured: false
-  }.
+    featured: false,
+    pdfUrl: "/issue-4.pdf"
+  },
   {
     id: 5,
     title: "Sound",
     issue: "Issue 5",
-    date: "July 2025",
-    description: "Discover sound truly is!",
+    date: "September 2025",
+    description: "Listen up! Explore the science of sound waves, vibrations, music, and how our ears perceive the world around us.",
     cover: cover5,
-    featured: true
+    featured: false,
+    pdfUrl: "/issue-5.pdf"
+  },
+  {
+    id: 6,
+    title: "Amazing Astrophysics",
+    issue: "Issue 6",
+    date: "December 2025",
+    description: "Journey through the cosmos! Discover stars, galaxies, black holes, and the mysteries of our vast universe.",
+    cover: cover6,
+    featured: false,
+    pdfUrl: "/issue-6.pdf"
+  },
+  {
+    id: 7,
+    title: "Fantastic Fluids",
+    issue: "December 7",
+    date: "Jan 2026",
+    description: "Learn how liquids and gases flow, from ocean currents to airplane wings.",
+    cover: cover7,
+    featured: false,
+    pdfUrl: "/issue-7.pdf"
   }
 ];
 
 const Magazines = () => {
+  const [selectedMagazine, setSelectedMagazine] = useState<typeof magazines[0] | null>(null);
+
   const handleMagazineClick = (magazine: typeof magazines[0]) => {
-    // Open the PDF in a new tab
-    window.open(`/issue-${magazine.id}.pdf`, '_blank');
+    setSelectedMagazine(magazine);
+  };
+
+  const closePdfViewer = () => {
+    setSelectedMagazine(null);
   };
 
   return (
@@ -126,12 +161,53 @@ const Magazines = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">More Issues Coming Soon</h3>
               <p className="text-muted-foreground text-sm">
-                We're working on new exciting issues covering how physics works in the human body!
+                We're working on new exciting issues covering relativity, particle physics, and more!
               </p>
             </CardContent>
           </Card>
         </div>
       </div>
+
+      {/* PDF Viewer Modal */}
+      {selectedMagazine && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+          <div className="bg-background rounded-lg w-full max-w-6xl h-[90vh] flex flex-col overflow-hidden">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 border-b border-border">
+              <div>
+                <h2 className="text-xl font-bold text-primary">{selectedMagazine.title}</h2>
+                <p className="text-sm text-muted-foreground">{selectedMagazine.issue} • {selectedMagazine.date}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => window.open(selectedMagazine.pdfUrl, '_blank')}
+                >
+                  <Download className="h-4 w-4 mr-2" />
+                  Download
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={closePdfViewer}
+                >
+                  <X className="h-5 w-5" />
+                </Button>
+              </div>
+            </div>
+            
+            {/* PDF Embed */}
+            <div className="flex-1 bg-muted">
+              <iframe
+                src={selectedMagazine.pdfUrl}
+                className="w-full h-full"
+                title={selectedMagazine.title}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
