@@ -161,7 +161,7 @@ const Magazines = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">More Issues Coming Soon</h3>
               <p className="text-muted-foreground text-sm">
-                We're working on new exciting issues covering relativity, particle physics, and more!
+                We're working on new exciting issues covering the physics in a human body!
               </p>
             </CardContent>
           </Card>
