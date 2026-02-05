@@ -43,6 +43,15 @@ const magazines = [
     description: "Discover how things push, pull, and roll in our everyday world.",
     cover: cover4,
     featured: false
+  }.
+  {
+    id: 5,
+    title: "Sound",
+    issue: "Issue 5",
+    date: "July 2025",
+    description: "Discover sound truly is!",
+    cover: cover5,
+    featured: true
   }
 ];
 
@@ -117,7 +126,7 @@ const Magazines = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">More Issues Coming Soon</h3>
               <p className="text-muted-foreground text-sm">
-                We're working on new exciting issues covering relativity, particle physics, and more!
+                We're working on new exciting issues covering how physics works in the human body!
               </p>
             </CardContent>
           </Card>
