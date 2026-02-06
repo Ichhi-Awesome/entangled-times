@@ -76,7 +76,7 @@ const magazines = [
   {
     id: 7,
     title: "Fluids",
-    issue: "December 7",
+    issue: "Issue 7",
     date: "Jan 2026",
     description: "Learn how liquids and gases flow, from ocean currents to airplane wings.",
     cover: cover7,
